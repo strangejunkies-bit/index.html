@@ -799,14 +799,7 @@ footer{background:var(--ink);border-top:3px solid var(--gold);padding:3.5rem 2.5
   window.handleSubmit = function(e){
     e.preventDefault();
     var btn = e.target.querySelector('.btn-submit');
-    var orig = btn.textContent;
-    btn.textContent = '✓ Message Sent!';
-    btn.style.background = '#22c55e';
-    btn.style.color = '#fff';
-    setTimeout(function(){
-      btn.textContent = orig;
-      btn.style.background = '';
-      btn.style.color = '';
+    var orig = btn.textConten
       e.target.reset();
     }, 3200);
   };
